@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="fav-icon" href="/images/beerfavicon.jfif">
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" /> -->
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+    <h1 id="title" class="text-center">The Right Place</h1>
+    <p id="description" class="description text-center">Registration Form</p>
+    <p id="description" class="description text-center">Register to enjoy many benefits.</p>
+      </header>
+    <form id="registration-form" action="https://formsubmit.co/ricardo.padilla.ssc@gmail.com" method="POST">
+      <div class="form-group">
+        <!-- need to create a link from the home page to and 
+        from the registration/already have accountform  -->
+        <p>Already have an account? <a href="login.html">Login</a></p>
+        <label id="first-name" for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" autofocus required class="form-control" placeholder="First Name"/></label>
+        <label id="last-name" for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required class="form-control" placeholder="Last Name"/></label>
+        <label id="number-label" for="number">Enter Age<input type="number" id="number" name="age" min="21" max="110" required placeholder="Must be 21+" class="form-control" /></label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" required class="form-control" placeholder="Enter a valid email address"/></label>
+        <label id="new-password" for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" required class="form-control" placeholder="Enter new password"/></label>
+      </div>
+      <div class="form-group">
+        <p>What type of account do you need?</p>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" value="personal-account" class="input-radio" checked/> Personal Account</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" value="business-account" class="input-radio" /> Business Account</label>
+        <label for="terms-and-conditions" >
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="input-checkbox" checked /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      </div>
+      <div class="form-group">
+        <label id="profile-picture" for="profile-picture">Upload a profile picture: 
+          <input id="profile-picture" type="file" name="file" class="form-control"/>
+        </label>
+        
+        <label id="referrer" for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer" class="form-control">
+            <option value="">(select one)</option>
+            <option value="relative-friend">Relative or Friend</option>
+            <option value="internet">Internet</option>
+            <option value="radio">Radio</option>
+            <option value="television">Televison</option>
+            <option value="other">Other</option>
+          </select>
+          
+        </label>
+        <div class="form-group">
+          <p>Do you have a referral code?</p>
+          <label for="personal-account"><input id="referral-yes" type="radio" name="referral" value="yes" class="input-radio" checked/>Yes (If yes please enter code in the comments section)</label>
+          <label for="business-account"><input id="referral-no" type="radio" name="referral" value="no" class="input-radio" />No</label>
+        </div>
+      </div>
+    
+      <div class="form-group">
+          <p>Enter comments or additional information!</p>
+          <textarea id="bio" class="input-textarea" name="bio" 
+          placeholder="Tell us about you..."></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" 
+            class="submit-button">Submit Registration</button>
+            
+          </div>
+    </form>
+    </div>
+    <Nav class="container">
+      <div class="container">
+      <ul>
+        <li style="background-color: lightcoral;"><a href="index.html" style="font-variant: small-caps; text-decoration: none;">Back to Home Page</a></li>
+      </ul>
+      </div>
+      <footer id="footer" class="footer">*** Thank you for registering ***</footer>
+  </Nav>
+  </body>
+  
+</html>
+
+
+<!-- <style>
+
+body {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: bisque;
+  background-image: 
+    url(images/thumbnail_beer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+a {
+  color: #dfdfe2;
+}
+</style> -->

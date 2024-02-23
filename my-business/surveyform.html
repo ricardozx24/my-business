@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="fav-icon" href="/images/beerfavicon.jfif">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <title>Survey Form</title>
+  </head>
+  <body>
+    
+    <div class="container">
+      <header class="header">
+    <h1 id="title" class="text-center">The Right Place</h1>
+    <p id="description" class="description text-center">Survey Form</p>
+    <p id="description" class="description text-center">Please fill out form completely!</p>
+    </header>
+    
+    <form id="survey-form" action="https://formsubmit.co/ricardo.padilla.ssc@gmail.com" method="POST">
+      <div class="form-group">
+        <label id="name-label" for="name"> Name<input 
+          autofocus 
+          type="text"
+          name="name" 
+          id="name"
+          class="form-control" 
+          placeholder="First name, Last name"  
+          required /></label>      
+      
+      </div>
+      
+      <div class="form-group">
+        <label id="number-label" for="number"> Age<input 
+          type="number"
+          name="age"
+          id="number" 
+          min="21" 
+          max="110" 
+          placeholder="Must be 21+" 
+          class="form-control" required /></label>
+      
+      </div>
+      <div class="form-group">
+        <label id="email" for="email">Email<input 
+          type="email"
+          name="email"
+          id="email" 
+          placeholder="@ Email" 
+          class="form-control" required /></label>
+      
+      </div>
+      <div class="form-group">
+        <p>Which option best describes your role?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="first time filing">First time filing taxes</option>
+          <option value="current client">Current client</option>
+          <option value="former client">Former client</option>
+          <option value="requesting-informatioin-only">Only getting information</option>
+          <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you reccomend "The Tax Place" to a friend?</P>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" 
+            class="input-radio" checked> Definitely
+          </label>
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" 
+            class="input-radio"> Maybe
+          </label>
+          <label>
+            <input name="user-recommend" value="not-sure" type="radio" 
+            class="input-radio"> Not sure
+          </label>
+          <label>
+            <input name="user-recommend" value="not-at-all" type="radio" 
+            class="input-radio"> Not at all
+          </label>
+          </div>
+          <div class="form-group">
+            <p>What is your preferred method of contact?</p>
+            <select id="most-like" name="mostLike" class="form-control" 
+            required>
+              <option disabled selected value>Select an option</option>
+              <option value="text">Text</option>
+              <option value="call">Call</option>
+              <option value="email">Email</option>
+              <option value="voice-message">Voice message</option>
+              <option value="other">Other</option>
+            </select>  
+            </div>
+          <div class="form-group">
+            <p>Where did you file last year? (Pick the one)
+            </p>
+            <label>
+              <input name="prefer" value="the-right-place" type="radio" 
+              class="input-radio" checked> The Right Place
+            </label>
+            <label>
+              <input name="prefer" value="taxact" type="radio" 
+              class="input-radio"> Taxact
+            </label>
+            <label>
+                <input name="prefer" value="hr-block" type="radio" 
+                class="input-radio"> Hr block
+              </label>
+            <label>
+              <input name="prefer" value="other" type="radio" 
+              class="input-radio" > Other
+            </label>  
+          </div>
+          <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea id="comments" class="input-textarea" name="comment" 
+            placeholder="Enter your comment here..."></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" id="submit" 
+              class="submit-button" style="border-radius: 50%; border: 4px solid lightcoral;">Submit Survey</button>
+              
+            </div>
+    </form>
+    </div>
+    <Nav class="container">
+      <div class="container">
+      <ul>
+        <li style="background-color: lightcoral;"><a href="index.html" style="font-variant: small-caps; text-decoration: none;">Back to Home Page</a></li>
+      </ul>
+      </div>
+  </Nav>
+  <footer id="footer" class="footer">*** Thank you for your feedback ***</footer>
+  </body>
+ 
+</html>

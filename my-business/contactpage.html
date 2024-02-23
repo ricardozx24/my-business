@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" type="fav-icon" href="/images/beerfavicon.jfif">
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/e35415bcac.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">The Right Place</h1>
+        <p id="description" class="description text-center">Contact Us</p>
+        <p id="description" class="description text-center">Name: Ricardo Padilla</p>
+        <p id="description" class="description text-center">Email: ricky_padilla@outlook.com</p>
+        <p id="description" class="description text-center">Phone: (469) 750-4357</p>
+      </header>
+      <form id="registration-form" action="https://formsubmit.co/ricardo.padilla.ssc@gmail.com" method="POST">
+        <div class="form-group">
+          <p class="text-center">Contact Form</p>
+        <label id="first-name" for="first-name">First Name: <input id="first-name" name="first-name" type="text" autofocus required class="form-control" placeholder="First Name"/></label>
+        <label id="last-name" for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required class="form-control" placeholder="Last Name"/></label>
+        <label id="email-label" for="email">Enter Your Email: <input id="email" name="email" type="email" required class="form-control" placeholder="Enter a valid email address"/></label>
+      </div>
+      <div class="form-group">
+        <p>Account type:</p>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="input-radio" value="personal-account" checked/> Personal Account</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="input-radio" value="business-account" /> Business Account</label>
+        <label for="guest"><input id="guest" type="radio" name="account-type" class="input-radio" value="guest" /> Guest</label>
+
+      </div>
+      <div class="form-group">
+                
+        <label id="referrer" for="referrer">What type of inquiry do you have?
+          <select id="referrer" name="referrer" class="form-control">
+            <option value="">(select one)</option>
+            <option value="pricing">Pricing</option>
+            <option value="products">Products</option>
+            <option value="information-request">Information request</option>
+            <option value="customer-service">Customer Service</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+      </div>
+    
+      <div class="form-group">
+          <p>Tell us about the situation:</p>
+          <textarea id="bio" class="input-textarea" name="bio" 
+          placeholder="Please enter details...."></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" id="submit" 
+            class="submit-button">Request Contact</button>
+          </div>
+          <div>
+          <li style="text-align: center; list-style-type: none;">
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter" style="color: rgb(41, 206, 228);"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook" style="color: rgb(78, 78, 212);"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram" style="color: brown;"></i></a>
+            <a href="https://www.youtube.com/watch?v=uTx25b-IHQM" target="_blank"><i class="fa-brands fa-youtube" style="color: red;"></i></a>
+          </li>
+          </div>
+    </form>
+    </div>
+    <Nav class="container">
+      <div class="container">
+      <ul>
+        <li style="background-color: lightcoral"><a href="index.html" style="font-variant: small-caps; text-decoration: none;">Back to Home Page</a></li>
+      </ul>
+      </div>
+  </Nav>
+  <footer id="footer" class="footer">*** Thank you for contacting us ***</footer>
+  </body>
+
+</html>
+    
+    
